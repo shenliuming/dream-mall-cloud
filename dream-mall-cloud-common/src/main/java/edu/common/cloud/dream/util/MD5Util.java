@@ -10,11 +10,11 @@ import java.security.MessageDigest;
 public class MD5Util {
 
     private static String byteArrayToHexString(byte b[]) {
-        StringBuffer resultSb = new StringBuffer();
+        StringBuffer BaseRespDtoSb = new StringBuffer();
         for (int i = 0; i < b.length; i++)
-            resultSb.append(byteToHexString(b[i]));
+            BaseRespDtoSb.append(byteToHexString(b[i]));
 
-        return resultSb.toString();
+        return BaseRespDtoSb.toString();
     }
 
     private static String byteToHexString(byte b) {
@@ -27,19 +27,19 @@ public class MD5Util {
     }
 
     public static String MD5Encode(String origin, String charsetname) {
-        String resultString = null;
+        String BaseRespDtoString = null;
         try {
-            resultString = new String(origin);
+            BaseRespDtoString = new String(origin);
             MessageDigest md = MessageDigest.getInstance("MD5");
             if (charsetname == null || "".equals(charsetname))
-                resultString = byteArrayToHexString(md.digest(resultString
+                BaseRespDtoString = byteArrayToHexString(md.digest(BaseRespDtoString
                         .getBytes()));
             else
-                resultString = byteArrayToHexString(md.digest(resultString
+                BaseRespDtoString = byteArrayToHexString(md.digest(BaseRespDtoString
                         .getBytes(charsetname)));
         } catch (Exception exception) {
         }
-        return resultString;
+        return BaseRespDtoString;
     }
 
     private static final String hexDigits[] = {"0", "1", "2", "3", "4", "5",

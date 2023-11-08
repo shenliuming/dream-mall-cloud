@@ -9,7 +9,7 @@ import java.io.Serializable;
  * @Author： shenliuming
  * @return：
  */
-public class Result<T> implements Serializable {
+public class BaseRespDto<T> implements Serializable {
 
     private static final long serialVersionUID = -1L;
     // 数据结果，泛型，可以是列表、单个对象、数字、布尔值等
@@ -48,7 +48,7 @@ public class Result<T> implements Serializable {
 
     @Override
     public String toString() {
-        return "Result{" +
+        return "BaseRespDto{" +
                 "data=" + data +
                 ", code=" + code +
                 ", message='" + message + '\'' +

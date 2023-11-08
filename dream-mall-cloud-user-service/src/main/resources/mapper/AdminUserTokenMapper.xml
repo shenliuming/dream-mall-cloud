@@ -2,22 +2,22 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="edu.user.cloud.dream.dao.AdminUserTokenMapper">
 
-  <resultMap id="BaseResultMap" type="edu.user.cloud.dream.entity.AdminUserToken">
+  <BaseRespDtoMap id="BaseBaseRespDtoMap" type="edu.user.cloud.dream.entity.AdminUserToken">
     <id column="admin_user_id" jdbcType="BIGINT" property="adminUserId" />
-    <result column="token" jdbcType="VARCHAR" property="token" />
-    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
-    <result column="expire_time" jdbcType="TIMESTAMP" property="expireTime" />
-  </resultMap>
+    <baseRespDto column="token" jdbcType="VARCHAR" property="token" />
+    <baseRespDto column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <baseRespDto column="expire_time" jdbcType="TIMESTAMP" property="expireTime" />
+  </BaseRespDtoMap>
   <sql id="Base_Column_List">
     admin_user_id, token, update_time, expire_time
   </sql>
-  <select id="selectByPrimaryKey" ReqDtoeterType="java.lang.Long" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" ReqDtoeterType="java.lang.Long" BaseRespDtoMap="BaseBaseRespDtoMap">
     select 
     <include refid="Base_Column_List" />
     from tb_newbee_mall_admin_user_token
     where admin_user_id = #{adminUserId,jdbcType=BIGINT}
   </select>
-  <select id="selectByToken" ReqDtoeterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectByToken" ReqDtoeterType="java.lang.String" BaseRespDtoMap="BaseBaseRespDtoMap">
     select
     <include refid="Base_Column_List"/>
     from tb_newbee_mall_admin_user_token

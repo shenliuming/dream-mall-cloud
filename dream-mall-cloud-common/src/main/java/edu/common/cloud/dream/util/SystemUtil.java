@@ -16,12 +16,12 @@ public class SystemUtil {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
             md.update(src.getBytes());
-            String result = new BigInteger(1, md.digest()).toString(16);
-            if (result.length() == 31) {
-                result = result + "-";
+            String BaseRespDto = new BigInteger(1, md.digest()).toString(16);
+            if (BaseRespDto.length() == 31) {
+                BaseRespDto = BaseRespDto + "-";
             }
-            System.out.println(result);
-            return result;
+            System.out.println(BaseRespDto);
+            return BaseRespDto;
         } catch (Exception e) {
             return null;
         }
