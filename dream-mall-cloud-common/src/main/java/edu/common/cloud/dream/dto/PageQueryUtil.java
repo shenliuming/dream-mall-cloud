@@ -1,4 +1,4 @@
-package edu.user.cloud.dream.util;
+package edu.common.cloud.dream.dto;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -15,11 +15,11 @@ public class PageQueryUtil extends LinkedHashMap<String,Object> {
     //每页条数
     private int limit;
 
-    public PageQueryUtil(Map<String, Object> params) {
-        this.putAll(params);
+    public PageQueryUtil(Map<String, Object> ReqDtos) {
+        this.putAll(ReqDtos);
         //分页参数
-        this.page = Integer.parseInt(params.get("page").toString());
-        this.limit = Integer.parseInt(params.get("limit").toString());
+        this.page = Integer.parseInt(ReqDtos.get("page").toString());
+        this.limit = Integer.parseInt(ReqDtos.get("limit").toString());
         this.put("start", (page - 1) * limit);
         this.put("page", page);
         this.put("limit", limit);

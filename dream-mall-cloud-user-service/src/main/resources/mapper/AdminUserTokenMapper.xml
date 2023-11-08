@@ -11,29 +11,29 @@
   <sql id="Base_Column_List">
     admin_user_id, token, update_time, expire_time
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" ReqDtoeterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from tb_newbee_mall_admin_user_token
     where admin_user_id = #{adminUserId,jdbcType=BIGINT}
   </select>
-  <select id="selectByToken" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectByToken" ReqDtoeterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
     from tb_newbee_mall_admin_user_token
     where token = #{token,jdbcType=VARCHAR}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+  <delete id="deleteByPrimaryKey" ReqDtoeterType="java.lang.Long">
     delete from tb_newbee_mall_admin_user_token
     where admin_user_id = #{adminUserId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="edu.user.cloud.dream.entity.AdminUserToken">
+  <insert id="insert" ReqDtoeterType="edu.user.cloud.dream.entity.AdminUserToken">
     insert into tb_newbee_mall_admin_user_token (admin_user_id, token, update_time, 
       expire_time)
     values (#{adminUserId,jdbcType=BIGINT}, #{token,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, 
       #{expireTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="edu.user.cloud.dream.entity.AdminUserToken">
+  <insert id="insertSelective" ReqDtoeterType="edu.user.cloud.dream.entity.AdminUserToken">
     insert into tb_newbee_mall_admin_user_token
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="adminUserId != null">
@@ -64,7 +64,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="edu.user.cloud.dream.entity.AdminUserToken">
+  <update id="updateByPrimaryKeySelective" ReqDtoeterType="edu.user.cloud.dream.entity.AdminUserToken">
     update tb_newbee_mall_admin_user_token
     <set>
       <if test="token != null">
@@ -79,7 +79,7 @@
     </set>
     where admin_user_id = #{adminUserId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="edu.user.cloud.dream.entity.AdminUserToken">
+  <update id="updateByPrimaryKey" ReqDtoeterType="edu.user.cloud.dream.entity.AdminUserToken">
     update tb_newbee_mall_admin_user_token
     set token = #{token,jdbcType=VARCHAR},
       update_time = #{updateTime,jdbcType=TIMESTAMP},

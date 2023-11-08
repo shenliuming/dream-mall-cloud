@@ -1,4 +1,4 @@
-package edu.user.cloud.dream.util;
+package edu.common.cloud.dream.dto;
 
 import io.swagger.annotations.ApiModelProperty;
 

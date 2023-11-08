@@ -1,4 +1,4 @@
-package edu.user.cloud.dream.util;
+package edu.common.cloud.dream.util;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;

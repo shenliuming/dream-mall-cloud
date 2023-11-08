@@ -2,12 +2,14 @@ package edu.user.cloud.dream.service.impl;
 
 import edu.user.cloud.dream.entity.AdminUser;
 import edu.user.cloud.dream.service.AdminUserService;
+import org.springframework.stereotype.Service;
 
 /**
  * @Date: 2023-11-08 16:31
  * @Author： shenliuming
  * @return：
  */
+@Service
 public class AdminUserServiceImpl implements AdminUserService {
 
     @Override

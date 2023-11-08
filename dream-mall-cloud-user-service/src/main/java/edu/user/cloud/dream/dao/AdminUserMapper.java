@@ -1,7 +1,7 @@
 package edu.user.cloud.dream.dao;
 
 import edu.user.cloud.dream.entity.AdminUser;
-import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.ReqDto;
 
 /**
  * @Date: 2023-11-08 16:41
@@ -13,7 +13,7 @@ public interface AdminUserMapper {
 
     int insertSelective(AdminUser record);
 
-    AdminUser login(@Param("userName") String userName, @Param("password") String password);
+    AdminUser login(@ReqDto("userName") String userName, @ReqDto("password") String password);
 
     AdminUser selectByPrimaryKey(Long adminUserId);
 

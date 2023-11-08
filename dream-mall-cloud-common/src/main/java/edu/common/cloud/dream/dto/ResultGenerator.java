@@ -1,4 +1,4 @@
-package edu.user.cloud.dream.util;
+package edu.common.cloud.dream.dto;
 
 import org.springframework.util.StringUtils;
 

@@ -1,4 +1,4 @@
-package edu.user.cloud.dream.util;
+package edu.common.cloud.dream.exception;
 
 /**
  * @Date: 2023-11-08 16:24
