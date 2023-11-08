@@ -7,9 +7,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class DreamMallCloudUserServiceApplication {
+public class UserServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DreamMallCloudUserServiceApplication.class,args);
+        SpringApplication.run(UserServiceApplication.class,args);
     }
 }

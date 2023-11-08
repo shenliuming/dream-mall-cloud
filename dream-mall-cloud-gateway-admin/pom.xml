@@ -10,7 +10,6 @@
     <artifactId>dream-mall-cloud-gateway-admin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>dream-mall-cloud-gateway-admin</name>
-    <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
     <description>网关的服务</description>
 

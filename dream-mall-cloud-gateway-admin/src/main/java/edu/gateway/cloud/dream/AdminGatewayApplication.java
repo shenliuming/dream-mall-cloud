@@ -11,9 +11,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class DreamCloudAdminGatewayApplication {
+public class AdminGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DreamCloudAdminGatewayApplication.class,args);
+        SpringApplication.run(AdminGatewayApplication.class,args);
     }
 }
