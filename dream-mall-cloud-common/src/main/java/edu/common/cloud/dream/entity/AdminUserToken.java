@@ -1,4 +1,4 @@
-package edu.user.cloud.dream.entity;
+package edu.common.cloud.dream.entity;
 
 import lombok.Data;
 

@@ -1,5 +1,6 @@
 package edu.user.cloud.dream;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -11,6 +12,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
+@MapperScan("edu.user.cloud.dream.dao")
 public class DreamMallUserServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(DreamMallUserServiceApplication.class,args);

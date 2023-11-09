@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="edu.user.cloud.dream.dao.AdminUserTokenMapper">
 
-  <resultMap id="BaseBaseRespDtoMap" type="edu.user.cloud.dream.entity.AdminUserToken">
+  <resultMap id="BaseBaseRespDtoMap" type="edu.common.cloud.dream.entity.AdminUserToken">
     <id column="admin_user_id" jdbcType="BIGINT" property="adminUserId" />
     <result column="token" jdbcType="VARCHAR" property="token" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
@@ -27,13 +27,13 @@
     delete from tb_newbee_mall_admin_user_token
     where admin_user_id = #{adminUserId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="edu.user.cloud.dream.entity.AdminUserToken">
+  <insert id="insert" parameterType="edu.common.cloud.dream.entity.AdminUserToken">
     insert into tb_newbee_mall_admin_user_token (admin_user_id, token, update_time, 
       expire_time)
     values (#{adminUserId,jdbcType=BIGINT}, #{token,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}, 
       #{expireTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="edu.user.cloud.dream.entity.AdminUserToken">
+  <insert id="insertSelective" parameterType="edu.common.cloud.dream.entity.AdminUserToken">
     insert into tb_newbee_mall_admin_user_token
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="adminUserId != null">
@@ -64,7 +64,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="edu.user.cloud.dream.entity.AdminUserToken">
+  <update id="updateByPrimaryKeySelective" parameterType="edu.common.cloud.dream.entity.AdminUserToken">
     update tb_newbee_mall_admin_user_token
     <set>
       <if test="token != null">
@@ -79,7 +79,7 @@
     </set>
     where admin_user_id = #{adminUserId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="edu.user.cloud.dream.entity.AdminUserToken">
+  <update id="updateByPrimaryKey" parameterType="edu.common.cloud.dream.entity.AdminUserToken">
     update tb_newbee_mall_admin_user_token
     set token = #{token,jdbcType=VARCHAR},
       update_time = #{updateTime,jdbcType=TIMESTAMP},

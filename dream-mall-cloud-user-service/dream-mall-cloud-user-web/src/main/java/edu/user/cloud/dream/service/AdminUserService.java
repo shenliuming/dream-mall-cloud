@@ -13,4 +13,5 @@ public interface AdminUserService {
     Boolean updatePassword(Long loginUserId, String originalPassword, String newPassword);
     Boolean updateName(Long loginUserId, String loginUserName, String nickName);
     Boolean logout(Long adminUserId);
+    AdminUser getUserDetailByToken(String token);
 }

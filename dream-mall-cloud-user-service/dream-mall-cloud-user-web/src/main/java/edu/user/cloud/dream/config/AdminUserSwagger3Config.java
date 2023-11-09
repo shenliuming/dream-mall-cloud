@@ -1,6 +1,6 @@
 package edu.user.cloud.dream.config;
 
-import edu.user.cloud.dream.entity.AdminUserToken;
+import edu.common.cloud.dream.entity.AdminUserToken;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
