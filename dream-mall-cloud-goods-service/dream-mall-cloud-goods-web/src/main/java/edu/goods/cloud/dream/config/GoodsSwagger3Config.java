@@ -1,4 +1,4 @@
-package edu.user.cloud.dream.config;
+package edu.goods.cloud.dream.config;
 
 import edu.common.cloud.dream.entity.AdminUserToken;
 import org.springframework.context.annotation.Bean;
@@ -25,7 +25,7 @@ import java.util.List;
  */
 @Configuration
 @EnableOpenApi
-public class AdminUserSwagger3Config{
+public class GoodsSwagger3Config {
 
     @Bean
     public Docket api() {
@@ -33,7 +33,7 @@ public class AdminUserSwagger3Config{
                 .apiInfo(apiInfo())
                 .ignoredParameterTypes(AdminUserToken.class)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("edu.user.cloud.dream.controller"))
+                .apis(RequestHandlerSelectors.basePackage("edu.goods.cloud.dream.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .globalRequestParameters(getGlobalRequestParameters());
@@ -54,7 +54,7 @@ public class AdminUserSwagger3Config{
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("dream-mall-cloud-user-service 接口文档")
+                .title("dream-mall-cloud-goods-service 接口文档")
                 .description("swagger接口文档")
                 .version("3.0")
                 .build();

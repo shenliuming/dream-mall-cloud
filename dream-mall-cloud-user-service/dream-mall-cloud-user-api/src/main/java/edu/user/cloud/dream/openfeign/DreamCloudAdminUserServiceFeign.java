@@ -1,5 +1,6 @@
 package edu.user.cloud.dream.openfeign;
 
+import edu.common.cloud.dream.dto.BaseRespDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,5 +14,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface DreamCloudAdminUserServiceFeign {
 
     @GetMapping(value = "/admin/{token}")
-    String getAdminUserByToken(@PathVariable(value = "token")String token);
+    BaseRespDto getAdminUserByToken(@PathVariable(value = "token")String token);
 }

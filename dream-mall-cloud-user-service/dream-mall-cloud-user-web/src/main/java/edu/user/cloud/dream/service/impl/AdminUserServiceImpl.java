@@ -66,7 +66,8 @@ public class AdminUserServiceImpl implements AdminUserService {
 
     @Override
     public AdminUser getUserDetailByToken(String token) {
-        AdminUserToken adminUserToken = adminUserTokenMapper.selectByToken(token);
+        ValueOperations<String, AdminUserToken> opsForAdminUserToken = redisTemplate.opsForValue();
+        AdminUserToken adminUserToken = opsForAdminUserToken.get(token);
         if (adminUserToken != null) {
             return adminUserMapper.selectByPrimaryKey(adminUserToken.getAdminUserId());
         }
