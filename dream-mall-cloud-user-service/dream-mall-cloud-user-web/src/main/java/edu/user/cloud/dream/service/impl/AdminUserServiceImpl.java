@@ -1,11 +1,11 @@
 package edu.user.cloud.dream.service.impl;
 
-import edu.common.cloud.dream.util.NumberUtil;
-import edu.common.cloud.dream.util.SystemUtil;
+import edu.common.cloud.dream.utils.NumberUtil;
+import edu.common.cloud.dream.utils.SystemUtil;
 import edu.user.cloud.dream.dao.AdminUserMapper;
 import edu.user.cloud.dream.dao.AdminUserTokenMapper;
 import edu.user.cloud.dream.entity.AdminUser;
-import edu.common.cloud.dream.entity.AdminUserToken;
+import edu.common.cloud.dream.entity.base.AdminUserToken;
 import edu.user.cloud.dream.service.AdminUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;

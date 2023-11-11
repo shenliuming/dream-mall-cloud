@@ -1,9 +1,9 @@
 package edu.goods.cloud.dream.common;
 
-import edu.common.cloud.dream.dto.BaseRespDto;
-import edu.common.cloud.dream.entity.AdminUserToken;
+import edu.common.cloud.dream.dto.base.BaseRespDto;
+import edu.common.cloud.dream.entity.annotations.TokenToAdminUser;
 import edu.common.cloud.dream.exception.DreamMallException;
-import edu.goods.cloud.dream.entity.LoginAdminUser;
+import edu.common.cloud.dream.entity.goods.LoginAdminUser;
 import edu.user.cloud.dream.openfeign.DreamCloudAdminUserServiceFeign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;

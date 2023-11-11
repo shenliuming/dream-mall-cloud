@@ -9,6 +9,7 @@
         <module>dream-mall-cloud-gateway-admin</module>
         <module>dream-mall-cloud-common</module>
         <module>dream-mall-cloud-goods-service</module>
+        <module>dream-mall-cloud-recommend-service</module>
     </modules>
     <name>dream-mall-cloud</name>
     <packaging>pom</packaging>

@@ -1,6 +1,6 @@
 package edu.user.cloud.dream.openfeign;
 
-import edu.common.cloud.dream.dto.BaseRespDto;
+import edu.common.cloud.dream.dto.base.BaseRespDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

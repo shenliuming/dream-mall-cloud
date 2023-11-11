@@ -1,8 +1,7 @@
 package edu.user.cloud.dream.common;
 
 import edu.common.cloud.dream.exception.DreamMallException;
-import edu.user.cloud.dream.dao.AdminUserTokenMapper;
-import edu.common.cloud.dream.entity.AdminUserToken;
+import edu.common.cloud.dream.entity.base.AdminUserToken;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;

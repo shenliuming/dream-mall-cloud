@@ -1,10 +1,10 @@
 package edu.user.cloud.dream.controller;
 
-import edu.common.cloud.dream.dto.BaseRespDto;
-import edu.common.cloud.dream.dto.BaseRespDtoWrapper;
+import edu.common.cloud.dream.dto.base.BaseRespDto;
+import edu.common.cloud.dream.dto.base.BaseRespDtoWrapper;
 import edu.user.cloud.dream.common.TokenToAdminUser;
 import edu.user.cloud.dream.entity.AdminUser;
-import edu.common.cloud.dream.entity.AdminUserToken;
+import edu.common.cloud.dream.entity.base.AdminUserToken;
 import edu.user.cloud.dream.entity.dto.AdminLoginReqDto;
 import edu.user.cloud.dream.entity.dto.UpdateAdminNameReqDto;
 import edu.user.cloud.dream.entity.dto.UpdateAdminPasswordReqDto;

@@ -1,6 +1,6 @@
 package edu.user.cloud.dream.config;
 
-import edu.common.cloud.dream.dto.BaseRespDto;
+import edu.common.cloud.dream.dto.base.BaseRespDto;
 import edu.common.cloud.dream.exception.DreamMallException;
 import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;

@@ -1,0 +1,48 @@
+package edu.common.cloud.dream.entity.goods;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.Data;
+
+import java.util.Date;
+
+/**
+ * @Date: 2023-11-10 15:08
+ * @Author： shenliuming
+ * @return：
+ */
+@Data
+public class Goods {
+    private Long goodsId;
+
+    private String goodsName;
+
+    private String goodsIntro;
+
+    private Long goodsCategoryId;
+
+    private String goodsCoverImg;
+
+    private String goodsCarousel;
+
+    private Integer originalPrice;
+
+    private Integer sellingPrice;
+
+    private Integer stockNum;
+
+    private String tag;
+
+    private Byte goodsSellStatus;
+
+    private Integer createUser;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private Date createTime;
+
+    private Integer updateUser;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+    private Date updateTime;
+
+    private String goodsDetailContent;
+}

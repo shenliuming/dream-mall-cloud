@@ -1,6 +1,6 @@
 package edu.user.cloud.dream.dao;
 
-import edu.common.cloud.dream.entity.AdminUserToken;
+import edu.common.cloud.dream.entity.base.AdminUserToken;
 
 /**
  * @Date: 2023-11-08 16:37

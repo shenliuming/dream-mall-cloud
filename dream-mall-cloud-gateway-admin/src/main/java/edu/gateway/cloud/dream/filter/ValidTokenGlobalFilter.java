@@ -2,9 +2,9 @@ package edu.gateway.cloud.dream.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import edu.common.cloud.dream.dto.BaseRespDto;
-import edu.common.cloud.dream.dto.BaseRespDtoWrapper;
-import edu.common.cloud.dream.entity.AdminUserToken;
+import edu.common.cloud.dream.dto.base.BaseRespDto;
+import edu.common.cloud.dream.dto.base.BaseRespDtoWrapper;
+import edu.common.cloud.dream.entity.base.AdminUserToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
