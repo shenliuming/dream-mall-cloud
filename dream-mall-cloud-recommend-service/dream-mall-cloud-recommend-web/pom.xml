@@ -89,5 +89,11 @@
             <artifactId>dream-mall-cloud-user-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <dependency>
+            <groupId>edu.dream.cloud</groupId>
+            <artifactId>dream-mall-cloud-goods-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>

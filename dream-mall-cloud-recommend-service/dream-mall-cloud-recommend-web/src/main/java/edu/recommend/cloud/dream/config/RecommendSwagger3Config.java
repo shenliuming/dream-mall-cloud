@@ -33,7 +33,7 @@ public class RecommendSwagger3Config {
                 .apiInfo(apiInfo())
                 .ignoredParameterTypes(AdminUserToken.class)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("edu.goods.cloud.dream.controller"))
+                .apis(RequestHandlerSelectors.basePackage("edu.recommend.cloud.dream.controller"))
                 .paths(PathSelectors.any())
                 .build()
                 .globalRequestParameters(getGlobalRequestParameters());

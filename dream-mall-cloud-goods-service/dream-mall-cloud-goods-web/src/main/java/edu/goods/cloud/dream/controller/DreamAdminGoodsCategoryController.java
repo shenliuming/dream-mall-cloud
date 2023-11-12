@@ -3,7 +3,7 @@ package edu.goods.cloud.dream.controller;
 import edu.common.cloud.dream.dto.base.BaseRespDto;
 import edu.common.cloud.dream.dto.base.BaseRespDtoWrapper;
 import edu.common.cloud.dream.dto.base.PageQueryUtil;
-import edu.common.cloud.dream.dto.goods.BatchIdReqDto;
+import edu.common.cloud.dream.dto.base.BatchIdReqDto;
 import edu.common.cloud.dream.dto.goods.GoodsCategoryInsertReqDto;
 import edu.common.cloud.dream.dto.goods.GoodsCategoryUpdReqDto;
 import edu.common.cloud.dream.entity.goods.GoodsCategory;
